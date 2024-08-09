@@ -165,7 +165,8 @@ body {
 :root {
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
-    --accent-color: #d49e15;
+    --accent-color: #4d1cc9;
+    --dog-color: #ecb222;
     --dark-color: #34495e;
     --light-color: #ecf0f1;
     --white-color: #ffffff;
@@ -249,7 +250,7 @@ body::after {
     position: absolute;
     width: 120px;
     height: 60px;
-    background-color: var(--accent-color);
+    background-color: var(--dog-color);
     border-radius: 60px 60px 0 0;
     bottom: 0;
     left: 40px;
@@ -259,7 +260,7 @@ body::after {
     position: absolute;
     width: 80px;
     height: 80px;
-    background-color: var(--accent-color);
+    background-color: var(--dog-color);
     border-radius: 50%;
     top: 10px;
     left: 0;
@@ -267,21 +268,21 @@ body::after {
 
 .dog-ear {
     position: absolute;
-    width: 45px;
-    height: 45px;
-    background-color: var(--accent-color);
-    border-radius: 0 0 100% 100%;
-    top: -10px;
+    width: 20px;
+    height: 50px;
+    background-color: var(--dog-color);
+    border-radius: 0 0 50% 50%;
+    top: -20px;
 }
 
 .dog-ear.left {
-    left: 5px;
-    transform: rotate(-30deg);
+    left: 10px;
+    transform: rotate(-10deg);
 }
 
 .dog-ear.right {
-    right: 5px;
-    transform: rotate(30deg);
+    right: 10px;
+    transform: rotate(10deg);
 }
 
 .dog-eye {
@@ -316,7 +317,7 @@ body::after {
     position: absolute;
     width: 20px;
     height: 60px;
-    background-color: var(--accent-color);
+    background-color: var(--dog-color);
     border-radius: 10px;
     bottom: 10px;
     right: 0;
