@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Breed Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dog-illustration">
+        <div class="dog-body"></div>
+        <div class="dog-head">
+            <div class="dog-ear left"></div>
+            <div class="dog-ear right"></div>
+            <div class="dog-eye left"></div>
+            <div class="dog-eye right"></div>
+            <div class="dog-nose"></div>
+        </div>
+        <div class="dog-tail"></div>
+    </div>
+    <div class="container">
+        <h1 class="dog-classifier-title">Dog Breed Classifier</h1>
+        <form method="POST" enctype="multipart/form-data" class="upload-form">
+            <div class="form-group">
+                <label for="file" class="file-input-label">Upload an image of a dog:</label>
+                <input type="file" name="file" id="file" class="file-input">
+            </div>
+            <button type="submit" class="submit-btn">Classify Dog</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="result-title">Prediction Result</h1>
+        <div class="result-container">
+            <p class="result-item"><span class="result-label">Predicted Breed:</span> {{ breed }}</p>
+            <p class="result-item"><span class="result-label">Probability:</span> {{ prob }}</p>
+        </div>
+        <a href="/" class="back-btn">Upload Another Image</a>
+    </div>
+</body>
+</html>
